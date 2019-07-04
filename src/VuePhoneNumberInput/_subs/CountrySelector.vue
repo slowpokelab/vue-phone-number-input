@@ -72,7 +72,8 @@
             <div :class="`iti-flag-small iti-flag ${item.iso2.toLowerCase()}`" />
           </div>
           <div
-            v-if="!noCountriesDialCode" class="dial-code"
+            v-if="!noCountriesDialCode"
+            class="dial-code"
           >
             +{{ item.dialCode }}
           </div>
