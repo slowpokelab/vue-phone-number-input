@@ -17,7 +17,6 @@
     "test:unit:watch": "vue-cli-service test:unit --watch",
     "ui": "vue ui"
   },
-  "prepare": "npm run build",
   "files": [
     "dist/"
   ],
