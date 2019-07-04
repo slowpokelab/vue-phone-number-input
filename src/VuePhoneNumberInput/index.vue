@@ -21,6 +21,7 @@
         :ignored-countries="ignoredCountries"
         :label="t.countrySelectorLabel"
         :no-flags="noFlags"
+        :no-countries-dial-code="noCountriesDialCode"
         :size="size"
         class="input-country-selector"
       />
@@ -93,6 +94,7 @@
       noValidatorState: { type: Boolean, default: false },
       noUseBrowserLocale: { type: Boolean, default: false },
       noFlags: { type: Boolean, default: false },
+      noCountriesDialCode: { type: Boolean, default: false },
       error: { type: Boolean, default: false },
       noExample: { type: Boolean, default: false },
       required: { type: Boolean, default: false }

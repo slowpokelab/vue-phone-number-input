@@ -71,6 +71,11 @@
           >
             <div :class="`iti-flag-small iti-flag ${item.iso2.toLowerCase()}`" />
           </div>
+          <div
+            v-if="!noCountriesDialCode" class="dial-code"
+          >
+            +{{ item.dialCode }}
+          </div>
           <div class="dots-text">
             {{ item.name }}
           </div>
@@ -106,7 +111,8 @@
       preferredCountries: { type: Array, default: null },
       onlyCountries: { type: Array, default: null },
       ignoredCountries: { type: Array, default: Array },
-      noFlags: { type: Boolean, default: false }
+      noFlags: { type: Boolean, default: false },
+      noCountriesDialCode: { type: Boolean, default: false }
     },
     data () {
       return {
