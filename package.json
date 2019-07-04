@@ -15,6 +15,7 @@
     "serve:build": "vue-cli-service serve --mode production",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:watch": "vue-cli-service test:unit --watch",
+    "prepare": "npm run build",
     "ui": "vue ui"
   },
   "files": [
